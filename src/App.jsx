@@ -52,7 +52,7 @@ function App() {
             element={
               !user ? (
                 <Navigate to="/login" />
-              ) : user.role === 'admin' ? (
+              ) : user.role_id === 1 ? (
                 <AdminDashboard />
               ) : (
                 <PatientDashboard user={user} />

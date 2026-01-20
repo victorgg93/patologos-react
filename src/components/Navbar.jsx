@@ -9,7 +9,7 @@ const Navbar = ({ user, onLogout }) => {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                 <div className="nav-links">
-                    {user?.role === 'admin' ? (
+                    {user?.role_id === 1 ? (
                         <span style={{ fontSize: '0.85rem', color: '#64748b' }}>Modo Administrador</span>
                     ) : (
                         <span style={{ fontSize: '0.85rem', color: '#64748b' }}>Portal del Paciente</span>
